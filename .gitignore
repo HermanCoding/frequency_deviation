@@ -303,3 +303,4 @@ pyrightconfig.json
 # Datafiles
 /files
 /processed_files
+/log
