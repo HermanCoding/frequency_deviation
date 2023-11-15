@@ -304,3 +304,4 @@ pyrightconfig.json
 /files
 /processed_files
 /log
+/temp_df
