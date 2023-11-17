@@ -1,6 +1,7 @@
 import csv
 import requests
 import time
+import os
 from multiprocessing import cpu_count
 from multiprocessing.pool import ThreadPool
 
@@ -10,9 +11,13 @@ file.close()
 
 fns = []
 for url in urls:
+    parentdir = 'files'
+
+    if not os.path.exists(parentdir):
+        os.makedirs(parentdir)
+
     name = url[0].split('/')[-1]
-    # You need to manually create all directory's
-    fn = fr'C:\Users\Squeed\Downloads\files\{name}'
+    fn = fr'.\{parentdir}\{name}'
     fns.append(fn)
 
 inputs = zip(urls, fns)

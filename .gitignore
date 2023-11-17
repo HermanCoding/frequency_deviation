@@ -305,3 +305,4 @@ pyrightconfig.json
 /processed_files
 /log
 /temp_df
+/for_testing.ipynb
