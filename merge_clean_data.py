@@ -3,6 +3,7 @@ import pandas as pd
 
 data = []
 
+
 def merge_data(files_dir):
     for dirpath, dirnames, filenames in os.walk(files_dir):
         for filename in filenames:
