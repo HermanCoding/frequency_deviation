@@ -20,6 +20,9 @@ class ConcatQuoterUtcToFeather:
         df['Time'] = pd.to_datetime(df['Time']).dt.tz_convert('Europe/Stockholm')
         print('UTC changed to Europe/Stockholm')
 
+        df.set_index('Time', inplace=True)
+        print('Time column set as Index')
+
         if not os.path.exists(self.folder_name):
             os.makedirs(self.folder_name)
 

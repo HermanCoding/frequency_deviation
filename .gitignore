@@ -306,3 +306,9 @@ pyrightconfig.json
 /log
 /temp_df
 /temp/
+/test/mock-3-year.feather
+/test/mock-day.feather
+/test/mock-month.feather
+/test/mock-week.feather
+/test/mock-year.feather
+/test/mock-1_39min.feather
